@@ -2,35 +2,67 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: #2d3436;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
 }
 
 #main {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #81ecec;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 50px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 #addBtn {
   position: fixed;
   right: 10px;
-  top: 10px;
-  background-color: #2d3436;
+  top: 60px;
+  background-color: #3498db;
   color: white;
-  padding: 10px;
+  padding: 10px 15px;
   border: 0;
   outline: 0;
   border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+#addBtn:hover {
+  background-color: #2980b9;
 }
 
 .note {
-  width: 400px;
-  height: 400px;
-  background-color: white;
-  margin: 15px;
-  margin-top: 55px;
+  width: 350px;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .tool {
@@ -39,23 +71,66 @@
   color: white;
   padding: 5px;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .tool i {
   padding: 5px;
   cursor: pointer;
 }
 
+.tool .title-input {
+  background-color: #2d3436;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+  flex-grow: 1;
+}
+
+.tool .title-input::placeholder {
+  color: #bdc3c7;
+}
+
 .note textarea {
   border: none;
   width: 100%;
-  height: 100%;
+  height: 300px;
   resize: none;
   padding: 10px;
-  font-size: 18px;
+  font-size: 16px;
+  border-top: 1px solid #ecf0f1;
 }
 
 .note textarea:focus {
   border: 0;
   outline: 0;
+}
+
+.download-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  width: 100%;
+  background-color: #2d3436;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
