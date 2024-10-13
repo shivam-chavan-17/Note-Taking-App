@@ -63,6 +63,7 @@ nav h1 {
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  /* line-height: 1cm; */
 }
 
 .tool {
@@ -102,6 +103,7 @@ nav h1 {
   padding: 10px;
   font-size: 16px;
   border-top: 1px solid #ecf0f1;
+  line-height: 25px;
 }
 
 .note textarea:focus {
